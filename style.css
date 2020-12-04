@@ -32,6 +32,15 @@ h2{
     margin-left: 15;
 }
 
+h3{
+    font-size: 25px;
+    color: black;
+    font-family: Impact, Charcoal, sans-serif;
+    line-height: 30px;
+    margin-left: 15;
+    font-weight: bold;
+}
+
 p{
     font-size: 30px;
     margin-left: 15;
