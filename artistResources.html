@@ -1,1 +1,31 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+
+    <model-viewer id="static-model" src="assets/luvaGallery.glb" shadow-intensity="1" camera-controls alt="A 3D model of LUVA Gallery">
+        <div class="controls">
+        <button onclick="exportGLB()">Export GLB</button>
+        </div>
+    </model-viewer>
+    <script>
+        async function exportGLB(){
+        let modelViewer = document.getElementById("static-model");
+        const glTF = await modelViewer.exportScene();
+        var file = new File([glTF], "luvaGallery.glb");
+        var link = document.createElement("a");
+        link.download =file.name;
+        link.href = URL.createObjectURL(file);
+        link.click();
+        }
+    </script>
+</body>
+</html>
 
