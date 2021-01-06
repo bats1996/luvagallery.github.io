@@ -34,21 +34,12 @@ h2{
 }
 
 h3{
-<<<<<<< HEAD
     font-size: 25px;
     color: black;
     font-family: Impact, Charcoal, sans-serif;
     line-height: 30px;
     margin-left: 15;
     font-weight: bold;
-=======
-  font-size: 25px;
-  color: black;
-  font-family: Impact, Charcoal, sans-serif;
-  line-height: 30px;
-  margin-left: 15;
-  font-weight: bold;
->>>>>>> 5dfd401aa29f46237f6b841ff65923a3e74c0331
 }
 
 p{
@@ -112,8 +103,6 @@ section .row img {
     background-color:  chartreuse;
     color: white;
   }
-<<<<<<< HEAD
-=======
 
   .content{
     width:400px;
@@ -151,4 +140,3 @@ z-index: -9999;
 
 
  
->>>>>>> 5dfd401aa29f46237f6b841ff65923a3e74c0331
