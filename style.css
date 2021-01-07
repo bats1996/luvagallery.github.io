@@ -21,7 +21,8 @@ html, body {
   }
 
 h1 {
-    color: black
+    color: chartreuse;
+    font-size: 3vh;
     ;
 }
 
@@ -31,6 +32,7 @@ h2{
     font-family: Impact, Charcoal, sans-serif;
     line-height: 30px;
     margin-left: 15;
+    margin-top: 2vh;
 }
 
 h3{
@@ -65,9 +67,18 @@ p{
     margin: 20px;
         }
 
-section .row img {
-    margin: 0 0 30px;
-    width: 100%;
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 .gallery {
@@ -81,9 +92,8 @@ section .row img {
   }
 
   .container {
-    font-size: 23px;
-    font-weight: 600;
-    margin-top: 30;
+    padding-top: 10;
+    margin-top: auto;
     margin-left: auto;
     margin-right: auto;
   }
