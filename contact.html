@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>Contact Us</h1>
+<h2>Find us digitally here:</h2>
+<h2>You can find us here:</h2>
+
+<div id="googleMap" style="width:100%;height:400px;"></div>
+
+<script>
+function myMap() {
+const luvaGallery = { lat: 51.5304676685979, lng: -0.053247101851210815 };
+
+var mapOptions= {
+  center:luvaGallery,
+  zoom:18,
+};
+
+var map = new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+var marker = new google.maps.Marker({
+    position: luvaGallery,
+    title:"Hello World!"
+});
+
+marker.setMap(map);
+}
+</script>
+
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjcmcr4HswWhJlanMMpa6M6wHM9wLFMHY&callback=myMap"></script>
+
+</body>
+</html>
