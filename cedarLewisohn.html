@@ -23,119 +23,39 @@ The project will be for one night only, and will also include a Jamaican Ital so
 <br><br>
           <a href="http://www.cedarlewisohn.com/?fbclid=IwAR0_yiVckpR5qUM966Fo0jra_3I77B2IKLHxpx35XRCnAT83ltP3HGhKfyk">Cedar Lewisohn Website</a>
     </div>
-
-    <div class="container">
-        <div class="center">
-        <div class="row">
-            
-            
-             
-          <figure class="col-md-5">
-            <img id="cedarLewisohn1" class="thumbnail" src="assets/cedarLewisohn/1.jpg" style="height: 200; width: 300;";>
-          </figure>
-               
-          <figure class="col-md-5">
-              <img id="cedarLewisohn2" class="thumbnail" src="assets/cedarLewisohn/2.jpg" style="height: 300; width: 200;";>
-          </figure>
-             
-          <figure class="col-md-5">
-              <img id="cedarLewisohn3" class="thumbnail" src="assets/cedarLewisohn/3.jpg" style="height: 300; width: 200;";>
-          </figure>
-         
-               
-        </div>
-          </div>
-    </div>
-
-    <div id="myModal" class="modal">
-
-        <!-- The Close Button -->
-        <span class="close">&times;</span>
-      
-        <!-- Modal Content (The Image) -->
-        <img class="modal-content" id="img1">
-        <img class="modal-content" id="img2">
-        <img class="modal-content" id="img3">
-        <img class="modal-content" id="img4">
-        <img class="modal-content" id="img5">
-        
-        <!-- Modal Caption (Image Text) -->
-        <!-- <div id="caption"></div> -->
+<br>
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <div class="numbertext">1 / 3</div>
+        <p style="text-align:center"><img src="assets/cedarLewisohn/1.jpg" style="width:50%"></p>
+        <br>
+        <div class="text">Cedar Lewisohn</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">2 / 3</div>
+        <p style="text-align:center"><img src="assets/cedarLewisohn/2.jpg" style="width:50%"></p>
+        <br>
+        <div class="text">Cedar Lewisohn</div>
+      </div>
+    
+      <div class="mySlides fade">
+        <div class="numbertext">3 / 3</div>
+        <p style="text-align:center"><img src="assets/cedarLewisohn/3.jpg" style="width:50%"></p>
+        <br>
+        <div class="text">Cedar Lewisohn</div>
       </div>
 
-     
-
-      <script>
-// Get the modal
-var modal = document.getElementById("myModal");
-
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("cedarLewisohn1");
-var modalImg = document.getElementById("img1");
-
-//var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  //captionText.innerHTML = this.alt;
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  modal.style.display = "none";
-}
-      </script>
-
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
+      <a class="prev">&#10094;</a>
+      <a class="next">&#10095;</a>
     
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("cedarLewisohn2");
-    var modalImg = document.getElementById("img2");
-    
-    //var captionText = document.getElementById("caption");
-    img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      //captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-          </script>
-
-<script>
-    // Get the modal
-    var modal = document.getElementById("myModal");
-    
-    // Get the image and insert it inside the modal - use its "alt" text as a caption
-    var img = document.getElementById("cedarLewisohn3");
-    var modalImg = document.getElementById("img3");
-    
-    //var captionText = document.getElementById("caption");
-    img.onclick = function(){
-      modal.style.display = "block";
-      modalImg.src = this.src;
-      //captionText.innerHTML = this.alt;
-    }
-    
-    // Get the <span> element that closes the modal
-    var span = document.getElementsByClassName("close")[0];
-    
-    // When the user clicks on <span> (x), close the modal
-    span.onclick = function() {
-      modal.style.display = "none";
-    }
-          </script>
+      <div style="text-align:center">
+        <span class="dot"></span>
+        <span class="dot" ></span>
+        <span class="dot" ></span>
+      </div>
+    </div>
+    <br>
     
    <div><p style="text-align:center;">
 <video width="700" height="auto" controls>
@@ -146,6 +66,15 @@ span.onclick = function() {
   <p style="text-align:center;"><strong>Interview with Cedar</strong></p>
   <br>
 </div>
+
+<div class="as-console-wrapper"><div class="as-console"></div></div>
+
+<div>
+    <button class="button" onclick="goBack()">Go Back</button>
+</div>
+
+<br>
+<script src="script.js"></script>
 
 
 </body>
