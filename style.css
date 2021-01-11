@@ -49,6 +49,9 @@ p{
     margin-left: 15;
 }
 
+p2{
+  font-size: 20px;
+}
 .center {
   display: block;
   margin-left: auto;
