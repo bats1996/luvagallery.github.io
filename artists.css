@@ -114,6 +114,10 @@ section .row img {
     .modal-content {
       width: 100%;
     }
+    .zine{
+      width:90%;
+      height:auto;
+    }
   }
   /* Slideshow container */
   
