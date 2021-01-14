@@ -46,9 +46,9 @@ p{
 }
 
 p2{
-    font-size:40px; 
+    font-size:30px; 
     font-family:Impact, Charcoal, Sans-Serif;
-    margin-left: 15px;
+    margin-left:15px;
     }
 
 p3{
@@ -108,17 +108,26 @@ section .row img {
     text-decoration: none;
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 1800px){
+    .column{
+      flex:50%;
+      max-width:50%;
+      }
+    }
   
   /* 100% Image Width on Smaller Screens */
-  @media only screen and (max-width: 700px){
+  @media only screen and (max-width: 768px){
     .modal-content {
       width: 100%;
     }
-    .zine{
-      width:90%;
-      height:auto;
+    .column {
+      flex: 100%;
+      max-width: 100%;
     }
   }
+
+
   /* Slideshow container */
   
 .button {
@@ -248,10 +257,6 @@ to {opacity: 1}
   height: auto;
 }
 
-.responsive.vid{
-  width:100%;
-  max-height: 100%;
-}
 
 <style>
 body {font-family: Arial, Helvetica, sans-serif;}
@@ -333,3 +338,5 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
+
+
