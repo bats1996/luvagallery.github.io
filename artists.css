@@ -56,6 +56,10 @@ p3{
     color:black;
     }
 
+p.ex1{
+  max-width:60%;
+}    
+
 .center {
   display: block;
   margin-left: auto;
@@ -320,14 +324,3 @@ body {font-family: Arial, Helvetica, sans-serif;}
 .form-container .btn:hover, .open-button:hover {
   opacity: 1;
 }
-
-.text1 {
-  
-  font-size: 20px;
-  padding: 8px 12px;
-  position: absolute;
-  bottom:20px;
-  width: 100%;
-  text-align: center;
- 
-  }
