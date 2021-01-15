@@ -129,6 +129,16 @@ section .row img {
        flex:60%;
        max-width:50%;
      } 
+     .veniceAge{
+      flex: 80%;
+      min-width:50%;
+      max-width:70%;
+      min-height:55%;
+    }
+    .licks{
+      flex:60%;
+      max-width:50%;
+    }
     }
   
   /* 100% Image Width on Smaller Screens */
@@ -140,7 +150,6 @@ section .row img {
       flex: 100%;
       min-width:90%;
       max-width:90%;
-      
     }
     .vidswap{
       flex:90%;
@@ -149,6 +158,16 @@ section .row img {
     }
     .pandemicimg{
       flex:100%;
+      min-width:90%;
+      max-width:90%;
+    }
+    .veniceAge{
+      flex: 100%;
+      min-width:90%;
+      max-width:90%;
+    }
+    .licks{
+      flex: 100%;
       min-width:90%;
       max-width:90%;
     }
