@@ -114,6 +114,18 @@ section .row img {
     cursor: pointer;
   }
 
+  .side {
+    flex: 30%;
+    padding: 20px;
+  }
+  
+  /* Main column */
+  .main {
+    flex: 70%;
+    background-color: white;
+    padding: 20px;
+  }
+
   @media only screen and (max-width: 1800px){
     .column{
       flex:80%;
