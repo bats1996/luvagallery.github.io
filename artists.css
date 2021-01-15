@@ -125,6 +125,10 @@ section .row img {
       max-width:50%;
       min-width:50%;
       }
+     .pandemicimg{
+       flex:60%;
+       max-width:50%;
+     } 
     }
   
   /* 100% Image Width on Smaller Screens */
@@ -134,14 +138,19 @@ section .row img {
     }
     .column {
       flex: 100%;
-      min-width:100%;
-      max-width:100%;
+      min-width:90%;
+      max-width:90%;
       
     }
     .vidswap{
       flex:90%;
       max-width:100%;
       max-height:20%; 
+    }
+    .pandemicimg{
+      flex:100%;
+      min-width:90%;
+      max-width:90%;
     }
   }
 
