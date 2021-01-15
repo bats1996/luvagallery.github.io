@@ -1,41 +1,47 @@
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-  <link rel="icon" type="image/jpg" sizes="32x32" href="assets/favicon.jpg">
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="artists.css">
 
-  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" type="image/jpg" sizes="32x32" href="assets/favicon.jpg">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="artists.css">
+
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
 </head>
+
 <body>
     <div class="container">
-    <h2>LUVA Gallery Downloadable 3D Model</h2>
-    <h3>2020 has closed our doors physically, so 2021 can open our doors virtually!</h3>
-    <p> Download the gallery model below and the 3D software Blender, then curate your own show in our space! Please send us your own versions of virtual exhibitions at LUVA to <a href="mailti:luvagallery@outlook.com">luvagallery@outlook.com</a></p>
+        <h2>LUVA Gallery Downloadable 3D Model</h2>
+        <h3>2020 has closed our doors physically, so 2021 can open our doors virtually!</h3>
+        <p> Download the gallery model below and the 3D software Blender, then curate your own show in our space! Please
+            send us your own versions of virtual exhibitions at LUVA to <a
+                href="mailti:luvagallery@outlook.com">luvagallery@outlook.com</a></p>
 
-    <model-viewer id="static-model" src="assets/LUVA_Gallery_complete.glb" shadow-intensity="1" camera-controls alt="A 3D model of LUVA Gallery" style="width:100%;height:75%">
-        <div class="controls">
-        <button onclick="exportGLB()">Export GLB</button>
-        </div>
-    </model-viewer>
+        <model-viewer id="static-model" src="assets/LUVA_Gallery_complete.glb" shadow-intensity="1" camera-controls
+            alt="A 3D model of LUVA Gallery" style="width:100%;height:75%">
+            <div class="controls">
+                <button onclick="exportGLB()">Export GLB</button>
+            </div>
+        </model-viewer>
 
-    
-    <script>
-        async function exportGLB(){
-        let modelViewer = document.getElementById("static-model");
-        const glTF = await modelViewer.exportScene();
-        var file = new File([glTF], "luvaGallery.glb");
-        var link = document.createElement("a");
-        link.download =file.name;
-        link.href = URL.createObjectURL(file);
-        link.click();
-        }
-    </script>
+
+        <script>
+            async function exportGLB() {
+                let modelViewer = document.getElementById("static-model");
+                const glTF = await modelViewer.exportScene();
+                var file = new File([glTF], "luvaGallery.glb");
+                var link = document.createElement("a");
+                link.download = file.name;
+                link.href = URL.createObjectURL(file);
+                link.click();
+            }
+        </script>
     </div>
 </body>
-</html>
 
+</html>

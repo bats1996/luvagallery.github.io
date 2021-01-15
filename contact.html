@@ -1,76 +1,83 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
-    <link rel="icon" type="image/jpg" sizes="32x32" href="assets/favicon.jpg">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
-  
-    <title>Contact Us</title>
-  </head>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <link rel="icon" type="image/jpg" sizes="32x32" href="assets/favicon.jpg">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <title>Contact Us</title>
+</head>
+
 <body>
 
-<div class="container">
-  <h2>Contact Us</h2>
-  <h1>Find us digitally here:</h1>
-  <div class="center">
-    <div class="row">
-      <div class="column">
-        <a href="https://www.facebook.com/LUVAgallery">
-          <img src="assets/facebook.png" class="img-fluid">
-        </a>
-      </div>
-      <div class="column">
-        <a href="https://www.instagram.com/luva_gallery" >
-          <img src="assets/instagram.png" class="img-fluid">
-        </a>
-      </div>
-      <div class="column">
-        <a href="mailto:luvagallery@outlook.com">
-          <img src="assets/email.jpg" class="img-fluid">
-        </a>
+  <div class="container">
+    <h2>Contact Us</h2>
+    <h1>Find us digitally here:</h1>
+    <div class="center">
+      <div class="row">
+        <div class="column">
+          <a href="https://www.facebook.com/LUVAgallery">
+            <img src="assets/facebook.png" class="img-fluid">
+          </a>
+        </div>
+        <div class="column">
+          <a href="https://www.instagram.com/luva_gallery">
+            <img src="assets/instagram.png" class="img-fluid">
+          </a>
+        </div>
+        <div class="column">
+          <a href="mailto:luvagallery@outlook.com">
+            <img src="assets/email.jpg" class="img-fluid">
+          </a>
+        </div>
       </div>
     </div>
+    <h1>Find us physically here:</h1>
+    <div id="googleMap" style="width:100%;height:350px;"></div>
+    <p style="font-size:20px;text-align:center;">James Campbell House, Old Ford Rd, London E2 9QE</p>
+    <br>
   </div>
-  <h1>Find us physically here:</h1>
-  <div id="googleMap" style="width:100%;height:350px;"></div>
-  <p style="font-size:20px;text-align:center;">James Campbell House, Old Ford Rd, London E2 9QE</p>
   <br>
-</div>
-<br>
-<script>
-  function myMap() {
-    const luvaGallery = { lat: 51.5304676685979, lng: -0.053247101851210815 };
+  <script>
+    function myMap() {
+      const luvaGallery = { lat: 51.5304676685979, lng: -0.053247101851210815 };
 
-    var mapOptions= {
-      center:luvaGallery,
-      zoom:18,
-    };
+      var mapOptions = {
+        center: luvaGallery,
+        zoom: 18,
+      };
 
-    var map = new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-    var marker = new google.maps.Marker({
+      var map = new google.maps.Map(document.getElementById("googleMap"), mapOptions);
+      var marker = new google.maps.Marker({
         position: luvaGallery,
-        title:"Hello World!"
-    });
+        title: "Hello World!"
+      });
 
-    marker.setMap(map);
-  }
-</script>
+      marker.setMap(map);
+    }
+  </script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjcmcr4HswWhJlanMMpa6M6wHM9wLFMHY&callback=myMap"></script>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAjcmcr4HswWhJlanMMpa6M6wHM9wLFMHY&callback=myMap"></script>
 
-<div class="as-console-wrapper"><div class="as-console"></div></div>
-<div class="footer">
-<button class="button" onclick="goBack()">Go Back</button>
-</div>
-<br>
-<script>
-  function goBack() {
-  window.history.back();
-  }
+  <div class="as-console-wrapper">
+    <div class="as-console"></div>
+  </div>
+  <div class="footer">
+    <button class="button" onclick="goBack()">Go Back</button>
+  </div>
+  <br>
+  <script>
+    function goBack() {
+      window.history.back();
+    }
   </script>
 
 </body>
+
 </html>
