@@ -119,6 +119,7 @@ section .row img {
       flex:80%;
       max-width:70%;
       }
+
     .vidswap{
       flex:50%;
       max-width:50%;
@@ -133,13 +134,14 @@ section .row img {
     }
     .column {
       flex: 100%;
-      min-width: 100%;
+      min-width:100%;
+      max-width:100%;
+      
     }
     .vidswap{
       flex:90%;
-      min-width:100%;
-      max-height:20%;
-      font-size:smaller;
+      max-width:100%;
+      max-height:20%; 
     }
   }
 
