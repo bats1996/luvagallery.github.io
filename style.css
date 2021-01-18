@@ -167,6 +167,25 @@ model-viewer {
   width: 100%;
   margin-top: 0;
 }
+@media (max-width:1800px){
+
+/* Style the navigation bar links */
+.navbar a {
+  color: white;
+  background-color:RGB(50,50,50);
+  padding: 10px 15px;
+  text-decoration: underline overline wavy chartreuse;
+  text-align: center;
+  font-family:Impact;
+  display:flex;
+}
+
+/* Change color on hover */
+.navbar a:hover {
+  background-color:chartreuse;
+  color: black;
+}
+}
 
 @media (max-width: 700px) {
   .row, .navbar {   
@@ -176,8 +195,8 @@ model-viewer {
 .navbar a {
   color: white;
   background-color:RGB(50,50,50);
-  padding: 10px 15px;
-  text-decoration: none;
+  padding: 8px 10px;
+  text-decoration: underline overline wavy chartreuse;
   text-align: center;
   font-family:Impact;
   display:flex;
@@ -191,3 +210,4 @@ model-viewer {
 
 
  
+}
