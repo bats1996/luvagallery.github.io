@@ -151,6 +151,10 @@ section .row img {
       flex:60%;
       max-width:50%;
     }
+    .bright{
+      flex: 100%;
+      min-width:30%;
+      max-width:30%;
     }
   
   /* 100% Image Width on Smaller Screens */
@@ -179,6 +183,11 @@ section .row img {
       max-width:90%;
     }
     .licks{
+      flex: 100%;
+      min-width:90%;
+      max-width:90%;
+    }
+    .bright{
       flex: 100%;
       min-width:90%;
       max-width:90%;
