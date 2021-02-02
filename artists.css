@@ -148,9 +148,15 @@ section .row img {
       min-height:55%;
     }
     .licks{
-      flex:60%;
-      max-width:50%;
+      flex:40%;
+      max-width:30%;
     }
+
+  }
+  .licks2{
+    flex:40%;
+    max-width:80%;
+  }
     .bright{
       flex: 100%;
       min-width:30%;
@@ -183,6 +189,11 @@ section .row img {
       max-width:90%;
     }
     .licks{
+      flex: 100%;
+      min-width:90%;
+      max-width:90%;
+    }
+    .licks2{
       flex: 100%;
       min-width:90%;
       max-width:90%;
