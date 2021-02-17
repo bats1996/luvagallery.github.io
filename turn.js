@@ -1003,6 +1003,8 @@ turnMethods = {
     }
   },
 
+ 
+
   // Resizes each page
 
   resize: function() {
@@ -1022,6 +1024,13 @@ turnMethods = {
 
     if (data.opts.autoCenter)
       this.turn('center');
+
+      if (!checkMobile()) { // not mobile
+        $('.flipbook').turn('display', 'double');
+       }
+       else {
+        $('.flipbook').turn('display', 'single');
+       }
 
   },
 
@@ -3350,3 +3359,4 @@ $.cssTransitionEnd = getTransitionEnd;
 $.findPos = findPos;
 
 })(jQuery);
+
